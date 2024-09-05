@@ -78,6 +78,7 @@ button{
     grid-template-columns: repeat(3, 1fr);
     justify-items:center;
     text-align: center;
+    padding: 80px;
 }
 .csik img{
     width: 100px;
@@ -86,6 +87,22 @@ button{
     padding: 5px;
 }
 /* - - - C S Í K - vége - - - */
+/* - - - K É P - - - */
+.kepek{
+    display: grid;
+    margin: 50px ; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    row-gap: 15px;
+    gap: 15px;
+    
+}
+.bg{
+    background-color: #dddddd;
+    padding: 100px;
+}
+/* - - - K É P - vége - - - */
 /* - - - F O O T E R - - - */
 footer{
     display: grid;
@@ -93,6 +110,9 @@ footer{
     padding: 100px;
     background-color: #333333;
     grid-template-columns:repeat(3, 1fr);
+}
+footer .rolunk{
+    width: 80%;
 }
 footer .felkover{
     font-weight: bold;
@@ -118,5 +138,102 @@ footer button{
     border: none;
     color: white;
     background-color: #555555;
-
 }
+/* - - - F O O T E R - vége - - - */
+/* - - - R E S P O N S I V E - - - */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+    .kereso {
+        margin-right: 0;
+        width: 100%;
+    }
+    .kereso input {
+        width: 80%;
+    }
+    .kereso button {
+        width: 18%;
+    }
+    /*nav vége*/
+    /*csik*/
+    .csik{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /*csik vége*/
+    /*footer*/
+    footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    } 
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 10px;
+        flex-direction: row; 
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+    }
+    .logo {
+        white-space: nowrap; 
+    }
+    .kereso {
+        display: flex;
+        margin-left: 0;
+        justify-content: flex-end; 
+    }
+    .kereso input {
+        border-radius: 4px 0 0 4px;
+    }
+    .kereso button {
+        width: 30%;
+        border-radius: 0 4px 4px 0;
+    }
+    /*nav vége*/
+
+    /*csik*/
+    .csik{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    /*csik vége*/
+    /*kep*/
+    .kepek{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    /*kep vége*/
+    /*footer*/
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    footer .linkek{
+        text-align: center;
+    }
+    footer .rolunk{
+        width: 300px;
+    }
+}
+
