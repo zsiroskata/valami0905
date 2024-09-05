@@ -4,7 +4,7 @@
 }
 
 nav{
-    padding: 20px;
+    padding: 20px 0;
     list-style: none;
     display: flex;
     align-items:center;
@@ -29,15 +29,63 @@ nav ul li a{
     color: white;
 }
 .kereso{
-    margin-right: 30px;
+    margin-right: 10px;
+}
+button{
+    color: white;
+    background-color: #555555;
 }
 .kereso button, input{
-    padding: 5px;
+    padding: 5px 0;
 }
 
-/* - - - N A V vége - - - */
+/* - - - N A V - vége - - - */
 
-
+/* - - - Ü D V Ö Z L Ő - - - */
+.udvozlo {
+    background-image: url('img/338ede5f9f949b9c4cc6c1c0c15c6a00\(1\).jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.udvozlo h1{
+    font-size: 50px;
+    padding: 10px;
+}
+.udvozlo p{
+    font-size: large;
+    text-indent: 50px;
+    padding: 10px;
+}
+.udvozlo button{
+    padding: 10px;
+    color: white;
+    background-color: #555555;
+    cursor: pointer;
+    border: none;
+}
+/* - - - Ü D V Ö Z L Ő - vége - - - */
+/* - - - C S Í K - - - */
+.csik{
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items:center;
+    text-align: center;
+}
+.csik img{
+    width: 100px;
+}
+.csik h2, p{
+    padding: 5px;
+}
+/* - - - C S Í K - vége - - - */
 /* - - - F O O T E R - - - */
 footer{
     display: grid;
@@ -64,5 +112,11 @@ footer .feliratkozas input{
     width: 250px;
 }
 footer button{
-    width: 265px;
+    margin-top: 5px;
+    padding: 5px;
+    width: 255px;
+    border: none;
+    color: white;
+    background-color: #555555;
+
 }
