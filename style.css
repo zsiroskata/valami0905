@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: black;
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li {
+    display: inline;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.logo{
+    font-weight: bold;
+    color: white;
+}
+.kereso{
+    margin-right: 30px;
+}
+.kereso button, input{
+    padding: 5px;
+}
+
+/* - - - N A V vége - - - */
+
+
+/* - - - F O O T E R - - - */
+footer{
+    display: grid;
+    color: white;
+    padding: 100px;
+    background-color: #333333;
+    grid-template-columns:repeat(3, 1fr);
+}
+footer .felkover{
+    font-weight: bold;
+    padding:  5px 0;
+}
+footer li{
+    list-style: none;
+    padding:  10px 0;
+}
+
+footer a{
+    color: white;
+}
+
+footer .feliratkozas input{
+    margin: 2px 0;
+    width: 250px;
+}
+footer button{
+    width: 265px;
+}
